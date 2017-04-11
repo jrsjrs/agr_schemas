@@ -1,0 +1,16 @@
+{
+  "title": "globalId for an entity",
+  "description": "The accepted globalId for an entity",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [ "globalId" ],
+  "additionalProperties": false,
+  "id": "globalId.json#",
+  "properties": {
+    "globalId": {
+      "type": "string",
+      "description": "The prefixed globalId for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:MGI:87917, PMID:26447131. Please see the README.md at https://github.com/alliance-genome/agr_schemas for more information.",
+      "pattern": "^((FB:)|(MGI:)|(ZFIN:)|(SGD:)|(WB:)|(RGD:))"
+    }
+  }
+}

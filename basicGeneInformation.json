@@ -8,9 +8,8 @@
   "additionalProperties": false,
   "properties": {
     "primaryId": {                                
-      "type": "string",
       "description": "The prefixed primary (MOD) ID for an entity. For internal AGR use, e.g. FB:FBgn0003301, MGI:MGI:87917.",
-      "pattern": "^((FB:)|(MGI:)|(ZFIN:)|(SGD:)|(WB:)|(RGD:))"
+      "$ref" : "globalId.json#"
     },
     "primaryIdDisplay":{
       "type": "string",
